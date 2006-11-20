@@ -13,6 +13,7 @@ Source0:    http://cheeseshop.python.org/packages/source/M/%{fname}/%{fname}-%{v
 URL:		http://www.myghty.org/
 BuildRequires:  python-setuptools
 Requires:	python >= %{python_version}
+Requires:   python-setuptools
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
