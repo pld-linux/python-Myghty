@@ -1,32 +1,32 @@
-%define 	module	        myghty
-%define     fname           Myghty
-%define     python_version  2.4
+%define		fname	Myghty
 Summary:	View/Controller Framework and Templating Engine
-Summary(pl):	Åšrodowisko obsÅ‚ugujÄ…ce widok, kontroler oraz system szablonÃ³w WWW
+Summary(pl):	¦rodowisko obs³uguj±ce widok, kontroler oraz system szablonów WWW
 Name:		python-%{fname}
 Version:	1.1
 Release:	0.1
 License:	MIT
 Group:		Libraries/Python
-Source0:    http://cheeseshop.python.org/packages/source/M/%{fname}/%{fname}-%{version}.tar.gz
-# Source0-md5:   5865361811dca4054f1ec60ac32ee965
+Source0:	http://cheeseshop.python.org/packages/source/M/Myghty/%{fname}-%{version}.tar.gz
+# Source0-md5:	5865361811dca4054f1ec60ac32ee965
 URL:		http://www.myghty.org/
-BuildRequires:  python-setuptools
-Requires:	python >= %{python_version}
+BuildRequires:	python-setuptools
+BuildRequires:	python >= 1:2.5
+%pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A Python-based template and view-controller framework derived from
-HTML::Mason. Supports the full featureset of Mason, allowing component-based
-web development with Python-embedded HTML, and includes many new concepts and
-features not found in Mason.
+HTML::Mason. Supports the full featureset of Mason, allowing
+component-based web development with Python-embedded HTML, and
+includes many new concepts and features not found in Mason.
 
 %description -l pl
-Przeznaczone dla jÄ™zyka Python Åšrodowisko obsÅ‚ugujÄ…ce model i kontroler oraz
-system szablonÃ³w. Oparte na module HTML::Mason jÄ™zyka Perl. ObsÅ‚uguje
-wszystkie funkcje Masona, pozwalajÄ…c na tworzenie modularnych szablonÃ³w HTML z
-osadzonym kodem w Pythonie.
+Przeznaczone dla jêzyka Python ¶rodowisko widok-kontroler oraz system
+szablonów. Wywodzi siê z modu³u HTML::Mason jêzyka Perl. Obs³uguje
+wszystkie funkcje Masona, pozwalaj±c na tworzenie modularnych
+szablonów HTML z osadzonym kodem w Pythonie. Zawiera wiele idei i
+mo¿liwo¶ci nie obecnych w Masonie.
 
 %prep
 %setup -qn %{fname}-%{version}
@@ -48,5 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{py_sitescriptdir}/%{module}
-%{py_sitescriptdir}/%{fname}-%{version}-py%{python_version}.egg-info
+%{py_sitescriptdir}/myghty
+%{py_sitescriptdir}/%{fname}-%{version}-py*.egg-info
