@@ -1,6 +1,6 @@
 %define		fname	Myghty
 Summary:	View/Controller Framework and Templating Engine
-Summary(pl):	¦rodowisko obs³uguj±ce widok, kontroler oraz system szablonów WWW
+Summary(pl.UTF-8):   Åšrodowisko obsÅ‚ugujÄ…ce widok, kontroler oraz system szablonÃ³w WWW
 Name:		python-%{fname}
 Version:	1.1
 Release:	0.1
@@ -21,12 +21,12 @@ HTML::Mason. Supports the full featureset of Mason, allowing
 component-based web development with Python-embedded HTML, and
 includes many new concepts and features not found in Mason.
 
-%description -l pl
-Przeznaczone dla jêzyka Python ¶rodowisko widok-kontroler oraz system
-szablonów. Wywodzi siê z modu³u HTML::Mason jêzyka Perl. Obs³uguje
-wszystkie funkcje Masona, pozwalaj±c na tworzenie modularnych
-szablonów HTML z osadzonym kodem w Pythonie. Zawiera wiele idei i
-mo¿liwo¶ci nie obecnych w Masonie.
+%description -l pl.UTF-8
+Przeznaczone dla jÄ™zyka Python Å›rodowisko widok-kontroler oraz system
+szablonÃ³w. Wywodzi siÄ™ z moduÅ‚u HTML::Mason jÄ™zyka Perl. ObsÅ‚uguje
+wszystkie funkcje Masona, pozwalajÄ…c na tworzenie modularnych
+szablonÃ³w HTML z osadzonym kodem w Pythonie. Zawiera wiele idei i
+moÅ¼liwoÅ›ci nie obecnych w Masonie.
 
 %prep
 %setup -qn %{fname}-%{version}
