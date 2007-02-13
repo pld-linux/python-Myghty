@@ -1,6 +1,6 @@
 %define		fname	Myghty
 Summary:	View/Controller Framework and Templating Engine
-Summary(pl.UTF-8):   Środowisko obsługujące widok, kontroler oraz system szablonów WWW
+Summary(pl.UTF-8):	Środowisko obsługujące widok, kontroler oraz system szablonów WWW
 Name:		python-%{fname}
 Version:	1.1
 Release:	0.1
