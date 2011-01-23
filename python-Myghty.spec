@@ -9,8 +9,10 @@ Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/M/Myghty/%{fname}-%{version}.tar.gz
 # Source0-md5:	5865361811dca4054f1ec60ac32ee965
 URL:		http://www.myghty.org/
+BuildRequires:	python-modules
 BuildRequires:	python-setuptools
 BuildRequires:	python >= 1:2.4
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 %pyrequires_eq	python-modules
 BuildArch:	noarch
