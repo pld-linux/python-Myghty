@@ -3,7 +3,7 @@ Summary:	View/Controller Framework and Templating Engine
 Summary(pl.UTF-8):	Środowisko obsługujące widok, kontroler oraz system szablonów WWW
 Name:		python-%{fname}
 Version:	1.2
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/M/Myghty/%{fname}-%{version}.tar.gz
